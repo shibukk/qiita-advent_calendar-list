@@ -1,0 +1,17 @@
+## はじめに
+2016年 Qiita Advent Calendar に投稿された記事の当日分の一覧が見たいと思い、自動投稿されるようにしました（してない）。
+
+実際にやってみるとすごい件数が並んでめちゃくちゃ読みにくいという…。
+なので毎日自動実行するのはやめて、今回手動で実行した結果だけアップしたいと思います。
+なお、記事へのゴミリンクが残ってしまうので、URLは後で消す予定です。
+
+Qiita に Advent Calendar への投稿一覧が見れるタブが追加されたら嬉しいです :bow:
+
+コードは[こちら](https://github.com/shibukk/qiita-advent_calendar-list)。
+
+##  12/<%= Time.now.day %> の投稿
+<% data.each do |item| %>
+[<%= item[:title] %>](<%= item[:url] %>)
+<% end %>
+
+みなさん、よい Advent Calendar を！
